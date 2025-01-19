@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 
-export const GradientBackground = () => {
+export const GradientBackground = ({ children }: { children: React.ReactNode }) => {
   const constraintsRef = useRef(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
@@ -18,7 +18,7 @@ export const GradientBackground = () => {
   return (
     <motion.div
       ref={constraintsRef}
-      className="relative w-full h-[40vh] overflow-hidden rounded-2xl mb-8"
+      className="relative w-full h-[40vh] overflow-hidden rounded-2xl mb-8 flex items-center justify-center"
       onMouseMove={handleMouseMove}
     >
       <motion.div
@@ -76,6 +76,7 @@ export const GradientBackground = () => {
           delay: 0.2,
         }}
       />
+      {children}
     </motion.div>
   );
 };
