@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
+import { GradientBackground } from "./GradientBackground";
 
 export const Hero = () => {
   return (
     <section className="min-h-[60vh] flex flex-col justify-center items-center text-center px-4">
+      <GradientBackground />
       <motion.h1 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
