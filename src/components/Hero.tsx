@@ -3,7 +3,7 @@ import { GradientBackground } from "./GradientBackground";
 import { useEffect, useState } from "react";
 
 export const Hero = () => {
-  const name = "John Doe";
+  const name = "Amsal Madhani";
   const [displayText, setDisplayText] = useState("");
   const [isTyping, setIsTyping] = useState(true);
 
