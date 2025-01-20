@@ -41,6 +41,7 @@
 @layer base {
   * {
     @apply border-border;
+    cursor: none !important;
   }
   body {
     @apply bg-background text-foreground font-sans;
@@ -54,4 +55,22 @@
 
 .section-fade[data-visible="true"] {
   animation-play-state: running;
+}
+
+/* Create custom cursor */
+.custom-cursor {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+
+/* Scale up cursor when hovering over clickable elements */
+.custom-cursor.hovering {
+  width: 16px;
+  height: 16px;
 }

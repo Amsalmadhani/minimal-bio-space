@@ -33,7 +33,7 @@ export const Hero = () => {
   }, [displayText]);
 
   return (
-    <section className="min-h-[60vh] flex flex-col justify-center items-center text-center px-4">
+    <section className="min-h-[40vh] flex flex-col justify-center items-center text-center px-4">
       <GradientBackground>
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
@@ -45,20 +45,10 @@ export const Hero = () => {
           <motion.span
             animate={{ opacity: [1, 0] }}
             transition={{ duration: 0.5, repeat: Infinity, repeatType: "reverse" }}
-            className="inline-block ml-1"
-          >
-            |
-          </motion.span>
+            className="inline-block ml-1 w-2 h-2 bg-white rounded-full align-middle"
+          />
         </motion.h1>
       </GradientBackground>
-      <motion.p 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
-        className="text-xl md:text-2xl text-muted-foreground font-mono"
-      >
-        Software Engineer & Creative Technologist
-      </motion.p>
     </section>
   );
 };

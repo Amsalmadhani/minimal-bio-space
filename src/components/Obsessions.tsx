@@ -4,18 +4,18 @@ import { Code2, Brain, Palette, Terminal } from "lucide-react";
 const obsessions = [
   {
     icon: Code2,
-    title: "Programming Languages",
-    description: "Exploring new paradigms and patterns"
+    title: "venture capital",
+    description: "tracking trends in software"
   },
   {
     icon: Brain,
-    title: "Artificial Intelligence",
+    title: "neuroscience and human psychology",
     description: "Machine learning and neural networks"
   },
   {
     icon: Palette,
-    title: "Design Systems",
-    description: "Creating cohesive user experiences"
+    title: "sports",
+    description: "lacrosse, track & field, brazillian jiu jitsu"
   },
   {
     icon: Terminal,
@@ -26,7 +26,7 @@ const obsessions = [
 
 export const Obsessions = () => {
   return (
-    <section className="py-16 px-4 max-w-2xl mx-auto">
+    <section className="hidden py-16 px-4 max-w-2xl mx-auto">
       <motion.h2 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
