@@ -14,7 +14,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <CustomCursor />
-      <BrowserRouter>
+      <BrowserRouter basename="/minimal-bio-space">
         <Routes>
           <Route path="/" element={<Index />} />
         </Routes>
