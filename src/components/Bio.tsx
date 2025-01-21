@@ -52,7 +52,7 @@ export const Bio = () => {
         transition={{ duration: 0.5, delay: 0.3 }}
         className="text-lg leading-relaxed text-muted-foreground mb-8"
       >
-        Currently focused on connecting with founders who are building in AI, software, and consumer. Please reach out if you are building or thinking of building, no matter how crazy the idea is. I prefer conversations > pitches.
+        Currently focused on connecting with founders who are building in AI, software, and consumer. Please reach out if you are building or thinking of building, no matter how crazy the idea is. I prefer conversations &gt; pitches.
       </motion.p>
 
       <motion.p 
@@ -86,7 +86,7 @@ export const Bio = () => {
             <li>unplanned moments</li>
             <li>being in awe of neuroscience and tech</li>
             <li>competing in sports (lacrosse for ten years and brazilian jiu jitsu)</li>
-            <li>conversations that immediately cut to the core (what’s your purpose > what’s your job)</li>
+            <li>conversations that immediately cut to the core (what’s your purpose &gt; what’s your job)</li>
             <li>listening to hip hop & rap music from the greats (drake, jcole, kendrick)</li>
             <li>conversations about parenting, religion, philosophy of life & psychedelic research</li>
           </ul>
