@@ -80,7 +80,7 @@ export const Bio = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-lg leading-relaxed text-muted-foreground"
           >
-            Things that bring me joy
+            Things that bring me joy:
           </motion.p>
           <ul className="list-disc pl-5 text-lg leading-relaxed text-muted-foreground mt-2">
             <li>unplanned moments</li>
